@@ -3,12 +3,11 @@
 
 $(document).ready(function() { 
 
-	var rangeLimit = 100;
 	var responsefor3 = 'fizz';
 	var responsefor5 = 'buzz';
 	var responsefor15 = 'fizzbuzz';
 
-	for (var i = 1; i <= rangeLimit; i++){
+	for (var i = 1; i <= 100; i++){
 		//see if it is divisible by 15; if so append fb to ul
 
 		if(i % 15 === 0) {
@@ -23,7 +22,7 @@ $(document).ready(function() {
 				$('.fb-list').append("<li>" + responsefor5 + "</li>");
 
 		} else {
-			$('.fb-list').append(i);
+			$('.fb-list').append("<li>" + i + "</li>");
 		}
 	}
 });
